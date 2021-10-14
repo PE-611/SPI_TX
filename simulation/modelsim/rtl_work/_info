@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/18.1/Projects/SPI_TX/simulation/modelsim
+vSPI_TX
+!s110 1634200987
+!i10b 1
+!s100 4>eDcTNLJ@_[g1SUQd2FI3
+IAgSfmizolCEn<m1a5_dPM3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1634200971
+8C:/intelFPGA_lite/18.1/Projects/SPI_TX/SPI_TX.v
+FC:/intelFPGA_lite/18.1/Projects/SPI_TX/SPI_TX.v
+L0 10
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1634200987.000000
+!s107 C:/intelFPGA_lite/18.1/Projects/SPI_TX/SPI_TX.v|
+!s90 -reportprogress|300|-work|work|C:/intelFPGA_lite/18.1/Projects/SPI_TX/SPI_TX.v|
+!i113 1
+Z3 o-work work
+Z4 tCvgOpt 0
+n@s@p@i_@t@x
+vSPI_TX_vlg_tst
+!s110 1634200986
+!i10b 1
+!s100 FHI9RBm3V^aIiRfSagEG;2
+IVHDN79koYn0fgAO[2a61B3
+R1
+R0
+w1634200880
+8C:/intelFPGA_lite/18.1/Projects/SPI_TX/simulation/modelsim/SPI_TX.vt
+FC:/intelFPGA_lite/18.1/Projects/SPI_TX/simulation/modelsim/SPI_TX.vt
+L0 28
+R2
+r1
+!s85 0
+31
+!s108 1634200986.000000
+!s107 C:/intelFPGA_lite/18.1/Projects/SPI_TX/simulation/modelsim/SPI_TX.vt|
+!s90 -reportprogress|300|-work|work|C:/intelFPGA_lite/18.1/Projects/SPI_TX/simulation/modelsim/SPI_TX.vt|
+!i113 1
+R3
+R4
+n@s@p@i_@t@x_vlg_tst
