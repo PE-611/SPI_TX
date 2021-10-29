@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SPI_TX
-Thu Oct 14 11:44:13 2021
+Tue Oct 19 15:15:36 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -46,16 +46,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Oct 14 11:44:13 2021       ;
+; Analysis & Synthesis Status        ; Successful - Tue Oct 19 15:15:36 2021       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; SPI_TX                                      ;
 ; Top-level Entity Name              ; SPI_TX                                      ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 126                                         ;
-;     Total combinational functions  ; 126                                         ;
+; Total logic elements               ; 121                                         ;
+;     Total combinational functions  ; 121                                         ;
 ;     Dedicated logic registers      ; 69                                          ;
 ; Total registers                    ; 69                                          ;
-; Total pins                         ; 16                                          ;
+; Total pins                         ; 6                                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -182,30 +182,30 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 126       ;
+; Estimated Total logic elements              ; 121       ;
 ;                                             ;           ;
-; Total combinational functions               ; 126       ;
+; Total combinational functions               ; 121       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 44        ;
-;     -- 3 input functions                    ; 10        ;
-;     -- <=2 input functions                  ; 72        ;
+;     -- 4 input functions                    ; 39        ;
+;     -- 3 input functions                    ; 9         ;
+;     -- <=2 input functions                  ; 73        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 71        ;
+;     -- normal mode                          ; 66        ;
 ;     -- arithmetic mode                      ; 55        ;
 ;                                             ;           ;
 ; Total registers                             ; 69        ;
 ;     -- Dedicated logic registers            ; 69        ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 16        ;
+; I/O pins                                    ; 6         ;
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 69        ;
-; Total fan-out                               ; 617       ;
-; Average fan-out                             ; 2.72      ;
+; Total fan-out                               ; 586       ;
+; Average fan-out                             ; 2.90      ;
 +---------------------------------------------+-----------+
 
 
@@ -214,7 +214,7 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
-; |SPI_TX                    ; 126 (126)           ; 69 (69)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 16   ; 0            ; 0          ; |SPI_TX             ; SPI_TX      ; work         ;
+; |SPI_TX                    ; 121 (121)           ; 69 (69)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 6    ; 0            ; 0          ; |SPI_TX             ; SPI_TX      ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -273,8 +273,8 @@ Encoding Type:  One-Hot
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
 ; cs~reg0                                ; 2       ;
-; bit_cnt[3]                             ; 4       ;
-; bit_cnt[0]                             ; 6       ;
+; bit_cnt[3]                             ; 3       ;
+; bit_cnt[0]                             ; 2       ;
 ; Total number of inverted registers = 3 ;         ;
 +----------------------------------------+---------+
 
@@ -296,25 +296,25 @@ Encoding Type:  One-Hot
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 16                          ;
+; boundary_port         ; 6                           ;
 ; cycloneiii_ff         ; 69                          ;
 ;     CLR               ; 7                           ;
 ;     ENA               ; 8                           ;
 ;     ENA SCLR          ; 25                          ;
 ;     SLD               ; 25                          ;
 ;     plain             ; 4                           ;
-; cycloneiii_lcell_comb ; 127                         ;
+; cycloneiii_lcell_comb ; 122                         ;
 ;     arith             ; 55                          ;
 ;         2 data inputs ; 55                          ;
-;     normal            ; 72                          ;
+;     normal            ; 67                          ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 4                           ;
-;         2 data inputs ; 13                          ;
-;         3 data inputs ; 10                          ;
-;         4 data inputs ; 44                          ;
+;         2 data inputs ; 14                          ;
+;         3 data inputs ; 9                           ;
+;         4 data inputs ; 39                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 7.00                        ;
-; Average LUT depth     ; 3.41                        ;
+; Max LUT depth         ; 6.00                        ;
+; Average LUT depth     ; 3.17                        ;
 +-----------------------+-----------------------------+
 
 
@@ -333,7 +333,7 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Oct 14 11:44:04 2021
+    Info: Processing started: Tue Oct 19 15:15:26 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SPI_TX -c SPI_TX
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -344,14 +344,14 @@ Info (286030): Timing-Driven Synthesis is running
 Info (17049): 8 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 142 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 13 input pins
+Info (21057): Implemented 127 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
     Info (21059): Implemented 3 output pins
-    Info (21061): Implemented 126 logic cells
+    Info (21061): Implemented 121 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4754 megabytes
-    Info: Processing ended: Thu Oct 14 11:44:14 2021
+    Info: Processing ended: Tue Oct 19 15:15:36 2021
     Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:18
+    Info: Total CPU time (on all processors): 00:00:20
 
 

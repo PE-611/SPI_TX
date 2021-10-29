@@ -8,7 +8,7 @@
 ///////////////////////////////////////////////////////////
 
 module SPI_TX (input clk, start_transmit, reset,
-					input [9:0] data,
+					//input [9:0] data,
 					output reg sdi, cs, out_spi_clk
 					);
 
@@ -17,7 +17,9 @@ initial cs 				<= 1'b1;
 initial out_spi_clk  <= 1'b0;					
 
 
+reg [9:0] data;
 
+initial data <= 9'b0011111111; 
 
 reg [7:0] state;	
 reg [7:0] next_state;
